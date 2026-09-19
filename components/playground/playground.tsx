@@ -33,7 +33,6 @@ export function Playground() {
     const original = console.log;
     console.log = (...args: unknown[]) => logs.push(args.map(String).join(" "));
     try {
-      // eslint-disable-next-line no-eval
       const result = eval(code);
       if (result !== undefined) logs.push(String(result));
       setOutput(logs.join("\n") || "Program ran with no output.");

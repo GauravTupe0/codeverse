@@ -4,7 +4,6 @@ const levels = ["beginner", "intermediate", "advanced", "company", "coding", "hr
 
 function makeQuestions(language: string): InterviewQuestion[] {
   const bank: InterviewQuestion[] = [];
-  let i = 1;
   for (const level of levels) {
     const count = level === "beginner" || level === "intermediate" || level === "advanced" ? 22 : 12;
     for (let n = 1; n <= count; n += 1) {
@@ -14,7 +13,6 @@ function makeQuestions(language: string): InterviewQuestion[] {
         question: questionFor(language, level, n),
         answer: answerFor(language, level, n),
       });
-      i += 1;
     }
   }
   return bank.slice(0, 102);
