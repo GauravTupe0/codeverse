@@ -1,0 +1,107 @@
+---
+title: "Operators"
+description: "Learn Operators in Kotlin with examples, diagrams, quizzes, and interview questions."
+language: "kotlin"
+slug: "operators"
+difficulty: "beginner"
+order: 6
+section: "Fundamentals"
+tags:
+  - kotlin
+  - operators
+---
+
+## Definition
+
+**Operators** in Kotlin is a core idea you will use constantly. Treat this lesson as the canonical explanation you can revisit before interviews, projects, and quizzes.
+
+## Explanation
+
+Kotlin approaches **Operators** with an emphasis on clarity and real-world usage. Start with the mental model, then look at syntax, then run a tiny example. After that, study the flow and the mistakes that usually appear in code reviews.
+
+In production, operators is less about memorizing trivia and more about choosing the right abstraction. Ask: what data moves, what fails, and how would you test it?
+
+## Syntax
+
+```kotlin
+fun greet(name: String) = "Hello, $name"
+```
+
+## Flow Diagram
+
+```
+Start
+  -> Identify the problem that Operators solves
+  -> Write the smallest Kotlin example
+  -> Run and inspect output
+  -> Refactor toward best practices
+  -> Add tests / edge cases
+End
+```
+
+## Code Examples
+
+### Minimal example
+
+```kotlin
+println("Hello, CodeVerse")
+```
+
+### Variables and values
+
+```kotlin
+val count = 42
+var name = "Ada"
+```
+
+### Iteration / repetition
+
+```kotlin
+for (item in listOf(1,2,3)) {
+    println(item)
+}
+```
+
+## Output
+
+```
+Hello, CodeVerse
+```
+
+## Real-world Example
+
+Imagine a Kotlin service that onboards users. **Operators** shows up when you validate input, persist a record, and return a response. A junior implementation works for the happy path. A senior implementation also covers empty input, duplicates, logging, and timeouts.
+
+## Best Practices
+
+- Prefer the obvious Kotlin idiom over clever tricks.
+- Name things after business intent, not after operators mechanics.
+- Keep examples testable and under 20 lines when teaching a concept.
+- Document failure modes next to the happy path.
+- Re-read official docs when the language ships a new major version.
+
+## Common Mistakes
+
+- Copying syntax from another language without checking Kotlin semantics.
+- Ignoring edge cases (empty collections, null/none, encoding, locale).
+- Skipping error handling because the demo "works on my machine".
+- Over-abstracting a beginner topic into a framework too early.
+
+## Interview Questions
+
+1. Define Operators in Kotlin in one sentence.
+2. Show a short example and explain the output.
+3. What breaks if input is empty or invalid?
+4. How does this interact with memory, types, or async behavior?
+5. What would you improve in a pull request that misuses operators?
+
+## Summary
+
+Operators is a building block of Kotlin. You learned the definition, syntax, a runnable example, the usual pitfalls, and how interviewers probe the topic. Continue with the next lesson and take the chapter quiz to lock it in.
+
+## Related Topics
+
+- [Practice problems](/docs/kotlin/practice-problems)
+- [Cheat sheet](/docs/kotlin/cheat-sheet)
+- [Interview questions](/interview/kotlin)
+- [MCQ quiz](/quiz/kotlin/operators)

@@ -1,0 +1,107 @@
+---
+title: "Dictionaries"
+description: "Learn Dictionaries in Python with examples, diagrams, quizzes, and interview questions."
+language: "python"
+slug: "dictionaries"
+difficulty: "beginner"
+order: 28
+section: "Core"
+tags:
+  - python
+  - dictionaries
+---
+
+## Definition
+
+**Dictionaries** in Python is a core idea you will use constantly. Treat this lesson as the canonical explanation you can revisit before interviews, projects, and quizzes.
+
+## Explanation
+
+Python approaches **Dictionaries** with an emphasis on clarity and real-world usage. Start with the mental model, then look at syntax, then run a tiny example. After that, study the flow and the mistakes that usually appear in code reviews.
+
+In production, dictionaries is less about memorizing trivia and more about choosing the right abstraction. Ask: what data moves, what fails, and how would you test it?
+
+## Syntax
+
+```python
+def greet(name):
+    return f'Hello, {name}'
+```
+
+## Flow Diagram
+
+```
+Start
+  -> Identify the problem that Dictionaries solves
+  -> Write the smallest Python example
+  -> Run and inspect output
+  -> Refactor toward best practices
+  -> Add tests / edge cases
+End
+```
+
+## Code Examples
+
+### Minimal example
+
+```python
+print("Hello, CodeVerse")
+```
+
+### Variables and values
+
+```python
+count = 42
+name = 'Ada'
+```
+
+### Iteration / repetition
+
+```python
+for item in [1, 2, 3]:
+    print(item)
+```
+
+## Output
+
+```
+Hello, CodeVerse
+```
+
+## Real-world Example
+
+Imagine a Python service that onboards users. **Dictionaries** shows up when you validate input, persist a record, and return a response. A junior implementation works for the happy path. A senior implementation also covers empty input, duplicates, logging, and timeouts.
+
+## Best Practices
+
+- Prefer the obvious Python idiom over clever tricks.
+- Name things after business intent, not after dictionaries mechanics.
+- Keep examples testable and under 20 lines when teaching a concept.
+- Document failure modes next to the happy path.
+- Re-read official docs when the language ships a new major version.
+
+## Common Mistakes
+
+- Copying syntax from another language without checking Python semantics.
+- Ignoring edge cases (empty collections, null/none, encoding, locale).
+- Skipping error handling because the demo "works on my machine".
+- Over-abstracting a beginner topic into a framework too early.
+
+## Interview Questions
+
+1. Define Dictionaries in Python in one sentence.
+2. Show a short example and explain the output.
+3. What breaks if input is empty or invalid?
+4. How does this interact with memory, types, or async behavior?
+5. What would you improve in a pull request that misuses dictionaries?
+
+## Summary
+
+Dictionaries is a building block of Python. You learned the definition, syntax, a runnable example, the usual pitfalls, and how interviewers probe the topic. Continue with the next lesson and take the chapter quiz to lock it in.
+
+## Related Topics
+
+- [Practice problems](/docs/python/practice-problems)
+- [Cheat sheet](/docs/python/cheat-sheet)
+- [Interview questions](/interview/python)
+- [MCQ quiz](/quiz/python/dictionaries)
